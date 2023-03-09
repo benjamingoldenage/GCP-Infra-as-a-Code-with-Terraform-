@@ -1,0 +1,16 @@
+provider "google" {
+  credentials = file("my-project-cloudrun-380014-f893097a9488.json")
+
+  project = "my-project-cloudrun-380014"
+  region  = "us-central1"
+  zone    = "us-central1-c"
+}
+
+
+
+module "learn-terraform-provision-gke-cluster" {
+  source  = "./learn-terraform-provision-gke-cluster"
+  project_id = "my-project-cloudrun-380014"
+  region = "us-central1"
+  
+}

@@ -1,0 +1,11 @@
+# ----------------------------------------------------------------------------------------------------------------------
+# Cloud run public access
+# ----------------------------------------------------------------------------------------------------------------------
+module "cloudrun" {
+  source  = "./modules/cloudrun"
+
+  project_id = var.project_id
+  region = var.cloud-run-region
+  docker-image = var.cloud-run-image
+  service-name = var.cloud-run-name
+}
