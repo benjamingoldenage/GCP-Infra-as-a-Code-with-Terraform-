@@ -1,5 +1,5 @@
 provider "google" {
-  credentials = file("my-project-cloudrun-380014-f893097a9488.json")
+  credentials = file("serviceaccountkey.json")
 
   project = "my-project-cloudrun-380014"
   region  = "us-central1"
