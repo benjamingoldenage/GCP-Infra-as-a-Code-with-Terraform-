@@ -3,8 +3,8 @@
 This repo contains Terraform configuration files to provision GKE cluster with 6 nodes, GCE instance, 2 different VPCs with subnets (1 for GCE instance and 1 for gke cluster). In addition to compute engine provisionings, a serverless application running on CloudRun can be deployed.
 
 Prereqs:
-Created gcp project
-Service coount key generated to access gcp project
+Created gcp project,
+Service coount key generated to access gcp project,
 Terraform installation
 
 Terrafom main.tf files: 
